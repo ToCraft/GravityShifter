@@ -1,7 +1,8 @@
 package dev.tocraft.gravityshifter;
 
 import com.mojang.logging.LogUtils;
-import dev.tocraft.craftedcore.event.common.ServerLevelEvents;
+import dev.tocraft.craftedcore.event.common.CommandEvents;
+import dev.tocraft.gravityshifter.command.GravityShifterCommand;
 import org.slf4j.Logger;
 
 public class GravityShifter {
@@ -9,6 +10,6 @@ public class GravityShifter {
     private static Logger LOGGER = LogUtils.getLogger();
 
     public static void initialize() {
-        ServerLevelEvents.LEVEL_LOAD.register(_ -> LOGGER.info("GravityShifter was loaded!"));
+        CommandEvents.REGISTRATION.register(new GravityShifterCommand());
     }
 }
