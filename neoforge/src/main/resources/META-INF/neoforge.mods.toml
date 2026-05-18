@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/ToCraft/GravityShifter/issues"
+displayURL = "https://github.com/ToCraft/GravityShifter"
+license = "MIT"
+
+[[mods]]
+modId = "gravityshifter"
+version = "${version}"
+displayName = "GravityShifter"
+authors = "To_Craft"
+credits = ""
+description = '''
+Change gravity in any direction!
+'''
+logoFile = "pack.png"
+
+[[dependencies.gravityshifter]]
+modId = "minecraft"
+mandatory = true
+type = "required"
+versionRange = "[${minecraft_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.gravityshifter]]
+modId = "craftedcore"
+mandatory = true
+type = "required"
+versionRange = "[${craftedcore_version},)"
+ordering = "AFTER"
+side = "BOTH"
