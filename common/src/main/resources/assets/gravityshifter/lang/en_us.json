@@ -5,5 +5,6 @@
   "gravityshifter.command.default.reset": "Reset the default Gravity direction.",
   "gravityshifter.command.default.set.success": "Set the default Gravity direction to %s.",
   "gravityshifter.command.default.get": "The current Gravity direction is %s.",
-  "gravityshifter.command.get": "The current Gravity direction for %s is %s."
+  "gravityshifter.command.get": "The current Gravity direction for %s is %s.",
+  "gravityshifter.command.not_living": "%s is not living and, therefore, its gravity cannot be changed."
 }

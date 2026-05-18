@@ -4,6 +4,9 @@ issueTrackerURL = "https://github.com/ToCraft/GravityShifter/issues"
 displayURL = "https://github.com/ToCraft/GravityShifter"
 license = "MIT"
 
+[[mixins]]
+config = "gravityshifter.mixins.json"
+
 [[mods]]
 modId = "gravityshifter"
 version = "${version}"
